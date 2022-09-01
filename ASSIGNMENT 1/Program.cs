@@ -10,20 +10,15 @@ namespace Assignment1
     {
         static void Main(string[] args)
         {
-            int result;
-            int number;
             Console.WriteLine("Enter your Number");
 
-            number = Convert.ToInt32(Console.ReadLine());
-            result = number%2;
-            if (result == 0)
+            int number = Convert.ToInt32(Console.ReadLine());
+            if (number%2 == 0)
             {
                 Console.WriteLine("Even ");
             }
             else
-            Console.WriteLine("odd ");
-      
-
+            Console.WriteLine("odd "); 
         }
     }
 }
