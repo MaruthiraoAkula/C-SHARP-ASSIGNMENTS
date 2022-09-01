@@ -11,7 +11,8 @@ namespace Assignment6
         static void Main(string[] args)
         {
             Console.WriteLine("Enter string of two letters");
-            string twoLetters=Console.ReadLine();
+            
+            string twoLetters = Console.ReadLine();
             string output = "";
             for (char i = twoLetters[0]; i <= twoLetters[1]; i++)
             {
