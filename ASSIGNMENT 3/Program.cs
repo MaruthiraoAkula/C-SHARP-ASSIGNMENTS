@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,24 +12,23 @@ namespace Assignment3
         {
             int j;
             bool flag1 = false;
-            bool flag2 = false;
+          //bool flag2 = false;
             for (j = 1; j < Arrr.Length; j++)
             {
                 if (Arrr[j-1] < Arrr[j])
                 {
                     flag1 = true;
                 }
-                if (Arrr[j - 1] > Arrr[j])
+               /* if (Arrr[j - 1] > Arrr[j])
                 {
                     flag2 = true;
-                }
-
+                }*/
             }
-            if (flag1 && flag2)
+            if (flag1)
             {
-                return false;
+                return true;
             }
-            /*  if (flag1 && !flag2)
+             /*if (flag1 && !flag2)
               {
                   return true;
               }
@@ -37,7 +36,7 @@ namespace Assignment3
               {
                   return true;
               }*/
-            return true;
+            return false;
         }
     }
     internal class Program
@@ -53,8 +52,7 @@ namespace Assignment3
                 Arr[i]=Number;
             }
             Sorted obj=new Sorted();
-            bool returnn=obj.Method(Arr);
-            Console.WriteLine(returnn);
+            Console.WriteLine(obj.Method(Arr));
 
         }
     }
