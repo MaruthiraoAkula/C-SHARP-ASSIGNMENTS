@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +10,16 @@ namespace Assignment8
     {
         static void Main(string[] args)
         {
-            int[] Arr = new int[3];
-            Console.WriteLine("Enter Numbers for Array to sum");//1,2,3
             int sum = 0;
-            for (int i = 0; i < Arr.Length; i++)
-            {     
-                int input = Convert.ToInt32(Console.ReadLine());
-                Arr[i] = input;
-                sum+=Arr[i];
+            List<int> Arr = new List<int>();
+            Console.WriteLine("Enter Numbers for Array to sum and Zero for exit");
+
+            int input =Convert.ToInt32(Console.ReadLine());
+            while (input > 0)
+            {
+                Arr.Add(input);
+                input = Convert.ToInt32(Console.ReadLine());
+                sum = Arr.Take(3).Sum();
             }
             Console.WriteLine(sum);
         }
