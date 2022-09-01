@@ -43,13 +43,7 @@ namespace Assignment2
            Console.WriteLine("Enter Second interger for ArithemeticOperations");
 
            int num2 = Convert.ToInt32(Console.ReadLine());
-
-
-           int addRes = obj.Addition(num1, num2);
-           int subsRes = obj.Subs(num1, num2);
-           int multiplyRes = obj.multiply(num1, num2);
-           int DivisionRes =  obj.Division(num1, num2);
-           Console.WriteLine(addRes + " , " + subsRes + " , " + multiplyRes + " , " + DivisionRes);
+           Console.WriteLine(obj.Addition(num1, num2) + " , " + obj.Subs(num1, num2) + " , " + obj.multiply(num1, num2) + " , " + obj.Division(num1, num2));
         }
     }
 }
