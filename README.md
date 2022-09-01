@@ -1,7 +1,7 @@
 # C-SHARP-ASSIGNMENTS
 Assigment 1 link :  https://github.com/MaruthiraoAkula/C-SHARP-ASSIGNMENTS/tree/main/ASSIGNMENT%201
-Assigment 2 link :
-Assigment 3 link :
+Assigment 2 link :  https://github.com/MaruthiraoAkula/C-SHARP-ASSIGNMENTS/tree/main/ASSIGNMENT%202
+Assigment 3 link :  https://github.com/MaruthiraoAkula/C-SHARP-ASSIGNMENTS/tree/main/ASSIGNMENT%203
 Assigment 4 link :
 Assigment 5 link :
 Assigment 6 link :
