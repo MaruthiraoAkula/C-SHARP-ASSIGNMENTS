@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,20 +11,20 @@ namespace Assignment7
     {
         static void Main(string[] args)
         {
-           
+
             Console.WriteLine("Enter size of integers");
 
-            int intsize=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter "+intsize+" numbers");
-            List<int> list = new List<int>(intsize);
-            for (int i = 0; i < intsize; i++)
+            int num = Convert.ToInt32(Console.ReadLine());
+            List<int> list = new List<int>();
+            while (num > 0)
             {
-                int num = Convert.ToInt32(Console.ReadLine());
                 list.Add(num);
+
+                num = Convert.ToInt32(Console.ReadLine());              
             }
             List<int> distinct = list.Distinct().ToList();
             var Queryresult = ((from x in distinct orderby x descending select x).Take(5));
-            Console.WriteLine("Top 5 ekements :");
+            Console.WriteLine("Top 5 Elements :");
             foreach (var item in Queryresult)
             {
                 Console.WriteLine(item);
